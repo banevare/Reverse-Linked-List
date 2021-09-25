@@ -1,4 +1,4 @@
-class Solution {
+class ReverseLinkedList {
     public ListNode reverseList(ListNode head) {								// reversing a singly-linked list
 		if (head == null) return head;
 		ListNode curr = head, after = null, before = null;
@@ -44,7 +44,7 @@ class Solution {
 		return s == null ? "" : s;
 	}
 	public static void test0(String ta){										// empty ListNode test
-		Solution s = new Solution();
+		ReverseLinkedList s = new ReverseLinkedList();
 		ListNode head = s.makeList0();
 		String tb = "";
 		String rb = s.print(head);
@@ -55,7 +55,7 @@ class Solution {
 		assert(ta.equals(ra));
 	}
 	public static void test1(String ta){										// empty ListNode test
-		Solution s = new Solution();
+		ReverseLinkedList s = new ReverseLinkedList();
 		ListNode head = s.makeList1();
 		String tb = "1";
 		String rb = s.print(head);
@@ -66,7 +66,7 @@ class Solution {
 		assert(ta.equals(ra));
 	}
 	public static void test6(String ta){										// 6 element ListNode test
-		Solution s = new Solution();
+		ReverseLinkedList s = new ReverseLinkedList();
 		ListNode head = s.makeList6();
 		String tb = "1 2 3 4 5 6";
 		String rb = s.print(head);
